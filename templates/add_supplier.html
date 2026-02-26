@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Supplier</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+    <h2>Add Supplier</h2>
+
+    <form method="POST">
+        <label>Supplier Name:</label><br>
+        <input type="text" name="name" required><br><br>
+
+        <label>Contact:</label><br>
+        <input type="text" name="contact" required><br><br>
+
+        <button type="submit">Add Supplier</button>
+    </form>
+
+    <br><br>
+    <a href="/dashboard">Back to Dashboard</a>
+    </div>
+</body>
+</html>
